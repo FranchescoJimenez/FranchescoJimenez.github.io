@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ | JYCEM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #0d1117;
+      color: #f5f5f5;
+    }
+
+    main {
+      flex-grow: 1;
+      padding-top: 70px;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: #4db8ff;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .accordion-button {
+      background-color: #1a1a1a;
+      color: #f1f1f1;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #2a2a2a;
+      color: #ffffff;
+    }
+
+    .accordion-body {
+      background-color: #1e1e1e;
+      color: #dddddd;
+      font-size: 0.85rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .accordion-item {
+      border: none;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #cccccc;
+      font-size: 1rem;
+      width: 100%;
+      padding: 1rem 0;
+    }
+
+    footer a {
+      color: #66b2ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="Index.html">JYCEM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="Index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="Privacidad.html">Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <h1 class="text-center mb-4">Preguntas Frecuentes (FAQ)</h1>
+    <div class="accordion" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+            ¿Cuáles son los métodos de pago aceptados?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Aceptamos pagos en efectivo, transferencias bancarias y billeteras electrónicas como Tigo Money y Billetera Personal.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            ¿Realizan envíos a domicilio?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sí, realizamos envíos en todo el país. El costo y tiempo de entrega dependen de la ubicación.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            ¿Puedo devolver un producto?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Aceptamos devoluciones dentro de los 7 días posteriores a la compra, siempre que el producto esté en su empaque original.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            ¿Cómo puedo contactar con soporte?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Puedes escribirnos al correo <strong>soporte@jycem.com.py</strong> o enviarnos un mensaje por WhatsApp al <strong>+595 994 975 628</strong>.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-3">
+    <p class="mb-1 small">Soporte: <a href="mailto:soporte@jycem.com.py">soporte@jycem.com.py</a> | Tel: +595 994 975 628</p>
+    <p class="mt-1 mb-0 small text-muted">© 2025 JYCEM.com.py | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

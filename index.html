@@ -1,0 +1,201 @@
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JYCEM.com.py</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+    body {
+  background-color: #0d1117;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1.custom-title {
+  color: #ffffff;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004a99;
+}
+
+footer {
+  background-color: #1a1a1a;
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  margin-top: auto;
+}
+
+footer a {
+  color: #66b2ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.btn {
+  flex: 1 1 auto; 
+  min-width: 140px;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.product {
+  text-align: center;
+  max-width: 180px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 0.75em;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75em;
+}
+
+.product h2 {
+  font-size: 1em;
+  color: #4db8ff;
+  margin-bottom: 0.4em;
+}
+
+.product p {
+  font-size: 0.9em;
+  color: #dddddd;
+  margin: 0;
+}
+
+img.logo-img {
+  max-height: 250px;
+  width: auto;
+  object-fit: contain;
+}
+
+form input {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 2rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.container {
+  margin-bottom: 98px; 
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="d-flex flex-column min-vh-100">
+      <div class="flex-grow-1">
+        <h1 class="custom-title text-center">Welcome to JYCEM's shop</h1>
+
+        <div class="text-center mt-4">
+          <img src="images/logo/Imagen de WhatsApp 2025-05-13 a las 22.16.30_c1e691b7.jpg" 
+               alt="Bienvenido a JYCEM" 
+               class="img-fluid rounded shadow logo-img">
+        </div>
+
+        <p class="text-center mt-3 mb-0 fs-5 px-3">
+          En <strong>JYCEM</strong> te ofrecemos todo lo que necesitás: ropa, alimentos, herramientas y más, a precios accesibles.
+        </p>
+
+        <div class="container mt-5">
+          <h2 class="text-center text-warning mb-4">🔥 Ofertas destacadas</h2>
+          <div class="text-center mb-4">
+            <a href="Ofertas.html" class="btn btn-outline-warning mt-3">Ver todas las ofertas</a>
+          </div>
+          <div class="products">
+           
+          </div>
+
+          <div class="text-center mt-5">
+            <h5>📬 Suscribite y recibí nuestras promociones</h5>
+            <form class="d-inline-block mt-2">
+              <input type="email" placeholder="Tu correo electrónico" class="form-control d-inline w-auto mb-2" required>
+              <br>
+              <button type="submit" class="btn btn-outline-light">Suscribirme</button>
+            </form>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+            <a class="btn btn-primary" href="Clothes.html" role="button">Clothes</a>
+            <a class="btn btn-primary" href="Meals.html" role="button">Meals</a>
+            <a class="btn btn-primary" href="Cleaning products.html" role="button">Cleaning Products</a>
+            <a class="btn btn-primary" href="Tools.html" role="button">Tools</a>
+            <a class="btn btn-primary" href="Basic Electronics.html" role="button">Basic Electronics</a>
+            <a class="btn btn-primary" href="Drinks.html" role="button">Drinks</a>
+            <a class="btn btn-primary" href="Pet Products.html" role="button">Pet Products</a>
+            <a class="btn btn-primary" href="Stationery Items.html" role="button">Stationery Items</a>
+          </div>
+        </div>
+
+        <footer class="text-white text-center py-2 mt-5">
+          <p class="mb-1 small">Soporte: <a href="mailto:soporte@jycem.com.py">soporte@jycem.com.py</a> | Tel: +595 994 975 628</p>
+          <div class="small mb-1">
+            <a href="Index.html" class="me-2">Inicio</a>
+            <a href="Faq.html" class="me-2">FAQ</a>
+            <a href="Contacto.html" class="me-2">Contacto</a>
+            <a href="privacidad.html">Privacidad</a>
+          </div>
+          <p class="mt-1 mb-0 small text-muted">© 2025 JYCEM.com.py | Todos los derechos reservados</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
